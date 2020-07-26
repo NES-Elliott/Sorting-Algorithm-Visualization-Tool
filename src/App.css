@@ -1,0 +1,13 @@
+.array-container {
+  /* display: flex;
+  justify-content: center;
+  align-self: center; */
+  position: absolute;
+  bottom: 0;
+}
+.array-bar {
+  width: 2px;
+  background-color: pink;
+  display: inline-block;
+  margin: 0 1px;
+}

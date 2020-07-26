@@ -1,7 +1,5 @@
 import React from 'react'
 
-const intArrays = 300
-
 export default class SortingVisualizer extends React.Component {
   constructor(props) {
     super(props)
@@ -17,30 +15,30 @@ export default class SortingVisualizer extends React.Component {
 
   resetArray() {
     const array = []
-    for (let i = 0; i < intArrays; i++) {
-      // array.push(randomIntFromInteraval(5,700))
-      array.push(Math.floor(Math.random() * (700 - 5 + 1) + 5))
+    for (let i = 0; i < 100; i++) {
+      array.push(randIntFromInterval(5,1000))
     }
     this.setState({array})
   }
   // Sorting Algorithms
+  // mergeSort() {}
 
   render() {
     const { array } = this.state
 
     return (
-      <>
+      <div className="array-container">
         {array.map((value, idx) => (
-          <div className="array-bar" key={idx}>
-            {value}
-          </div>
+          <div
+            className="array-bar"
+            key={idx}
+            style={{height: `${value}px`}}></div>
         ))}
-      </>
+      </div>
     )
   }
 }
 
-// mergeSort() {
-    
-//   for (let i = 0;)
-// }
+function randIntFromInterval(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min)
+}
