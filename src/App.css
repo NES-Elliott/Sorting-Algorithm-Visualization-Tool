@@ -5,7 +5,7 @@
   position: absolute;
   bottom: 0;
 }
-.array-bar {
+.array__bar {
   width: 2px;
   background-color: pink;
   display: inline-block;
