@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { getMergeSortAnimations } from '../utils/algorithms'
+import { resetArray } from '../utils/functions'
 
 export const SortingVisualizer = () => {
   const [array, setArray] = useState([])
@@ -15,7 +15,7 @@ export const SortingVisualizer = () => {
           ))}
       </div>
       <div className="btn__container">
-        <button className="" onClick={() => {}}>Generate New Array</button>
+        <button className="" onClick={() => setArray(resetArray(300, 5, 700))}>Generate New Array</button>
         <button className="" onClick={() => {}}>Merge Sort</button>
         <button className="" onClick={() => {}}>Quick Sort</button>
         <button className="" onClick={() => {}}>Heap Sort</button>
@@ -27,6 +27,4 @@ export const SortingVisualizer = () => {
 
 
 // UTILS
-function randIntFromInterval(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) + min)
-}
+
