@@ -22,7 +22,7 @@ export function mergeSort(animation, animationSpeed, primaryColor, secondaryColo
       setTimeout(() => {
         const [barOneIdx, newHeight] = animation[i]
         const barOneStyle = arrayBars[barOneIdx].style
-        barOneStyle.height = `${newHeight}px`
+        barOneStyle.height = `${newHeight}vh`
       }, i * animationSpeed)
     }
   }
