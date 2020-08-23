@@ -15,7 +15,7 @@ When the algorithm is finished sorting, you can generate a new array to watch it
 
 2. In your terminal, navigate into the Sorting-Algorithm-Visualization-Tool directory and type `npm install`.
 
-3. Use `npm start` to start the app or alternatively you can head over to [Sorting Visualizer]() on Heroku.
+3. Use `npm start` to start the app or alternatively you can head over to [Sorting Visualizer](https://nes-elliott.github.io/Sorting-Algorithm-Visualization-Tool/) on Heroku.
 s
 
 ### Future Additons
